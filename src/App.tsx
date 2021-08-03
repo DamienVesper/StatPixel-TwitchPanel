@@ -14,6 +14,7 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 
 import Error404 from './pages/404';
+import Dashboard from './pages/Dashboard';
 
 /**
  * The application layout.
@@ -27,6 +28,11 @@ class App extends React.Component {
                     {/* Landing Page */}
                     <Route exact path="/">
                         <Home />
+                    </Route>
+
+                    {/* Dashboard */}
+                    <Route exact path="/dashboard">
+                        <Dashboard />
                     </Route>
 
                     {/* 404 Handler */}
