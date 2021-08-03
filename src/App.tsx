@@ -19,27 +19,25 @@ import Error404 from './pages/404';
  * The application layout.
  */
 class App extends React.Component {
-    render = () => {
-        return (
-            <div id="app" className="text-light">
-                <Header />
-                <Router>
-                    <Switch>
-                        {/* Landing Page */}
-                        <Route exact path="/">
-                            <Home />
-                        </Route>
+    render = () => (
+        <div id="app" className="text-light">
+            <Header />
+            <Router>
+                <Switch>
+                    {/* Landing Page */}
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
 
-                        {/* 404 Handler */}
-                        <Route path="/">
-                            <Error404 />
-                        </Route>
-                    </Switch>
-                </Router>
-                <Footer />
-            </div>
-        );
-    }
+                    {/* 404 Handler */}
+                    <Route path="/">
+                        <Error404 />
+                    </Route>
+                </Switch>
+            </Router>
+            <Footer />
+        </div>
+    );
 }
 
 export default App;
