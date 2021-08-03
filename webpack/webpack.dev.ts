@@ -31,8 +31,8 @@ const config = merge(common, {
     plugins: [
         new HTMLWebpackPlugin({
             inject: true,
-            template: path.resolve(__dirname, `../public/index.html`)
-            // favicon: `./public/assets/img/logos/favicon.png` // NOTE: This has to be a relative path from root.
+            template: path.resolve(__dirname, `../public/index.html`),
+            favicon: `./public/assets/img/logos/favicon.png`
         }),
         new Webpack.HotModuleReplacementPlugin()
     ],
