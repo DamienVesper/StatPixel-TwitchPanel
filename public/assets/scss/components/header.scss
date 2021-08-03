@@ -1,0 +1,12 @@
+nav {
+    background: linear-gradient(25deg, #061e3340 0%, #143f6640 100%);
+    box-shadow: 1px 1px 5px #00000080;
+}
+
+nav .header-logo {
+    transition: 0.5s;
+}
+
+nav .header-logo:hover {
+    transform: rotate(45deg);
+}
